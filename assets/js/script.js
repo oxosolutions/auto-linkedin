@@ -61,7 +61,7 @@ $(document).ready(function(){
 			if(index <= buttonsLength){
 				$('.send-invite__actions .button-primary-large').click();
 				index++;
-				//clickEvent();
+				clickEvent();
 			}else{
 			   $('.next').click();
 			   index = 1;
