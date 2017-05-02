@@ -42,11 +42,9 @@ $(document).ready(function(){
 		}else{
 			$('.mn-pymk-list .mn-person-card__person-btn-ext').each(function(){
 				var elem = $(this);
-				setTimeout(function(){
-					var n = $(document).height();
-    					$('html, body').animate({ scrollTop: n }, 0);
-					elem.click();
-				},500);
+				var n = $(document).height();
+    				$('html, body').animate({ scrollTop: n }, 0);
+				elem.click();
 			});
 		}
 	   },5000);  
