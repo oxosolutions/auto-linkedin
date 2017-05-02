@@ -3,6 +3,7 @@ $(document).ready(function(){
 	<button class="auto-linkedin-withdraw">Withdraw</button>
 	<button class="auto-linkedin-connect">Connect</button>
 	<button class="auto-linkedin-connect-searched">Connect Searched</button>
+	<button class="auto-linkedin-send-message">Send Message</button>
 </div>
 
 <style type="text/css">
@@ -73,5 +74,14 @@ $(document).ready(function(){
 		},5000);
 	}
 	clickEvent();
+     });
+     
+     $('.auto-linkedin-send-message').click(function(){
+	     $('.msg-conversation-listitem').each(function(){
+		     $(this).click();
+		     $('.msg-compose-form__message-text').html('Hello, How are you?');
+		     var n = $('.msg-conversations-container__conversations-list').height();
+    		     $('html, body').animate({ scrollTop: n }, 0);
+	     });
      });
 });
