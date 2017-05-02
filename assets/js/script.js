@@ -55,11 +55,10 @@ $(document).ready(function(){
 	var buttonsLength = $('.ember-view .search-result__actions--primary').length;
 	var index = 1;
 	function clickEvent(){
+		console.log(index);
 		$('.ember-view .search-result__actions--primary:nth-child('+index+')').click();
 		setTimeout(function(){
-			console.log('Click Popup');
 			if(index <= buttonsLength){
-				console.log('Function again');
 				index++;
 				clickEvent();
 			}
