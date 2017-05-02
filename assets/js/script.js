@@ -65,9 +65,8 @@ $(document).ready(function(){
 				}
 				var n = $(document).height();
     				$('html, body').animate({ scrollTop: n }, 0);
-			}).promise().done(function(){ 
-				$('.next').click();
-			});
+			})
+			$('.next').click();
 		}
 	   },5000); 
      });
