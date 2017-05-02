@@ -23,10 +23,10 @@
   "permissions": [ "tabs", "https://*.linkedin.com/*", "notifications" ],
   "content_scripts": [
       {
-        "matches": ["https://*/*", "http://*/*"],
+        "matches": ["https://*.linkedin.com/*"],
         "js": ["assets/js/content.js"],
         "run_at": "document_end"
-      }
+      } 
     ]
 
 }
