@@ -68,7 +68,7 @@ $(document).ready(function(){
 // 					}
 // 					var n = $(document).height();
 // 					$('html, body').animate({ scrollTop: n }, 0);
-				},i * 5000);				
+				},5000);				
 			});
 // 			.promise().done(function () {
 // 				$('.next').click();
