@@ -56,15 +56,17 @@ $(document).ready(function(){
 		if(allElements == 0){
 			clearInterval(connectSearchedInterval);
 		}else{
-			$('.ember-view .search-result__actions--primary').each(function(){
+			$('.ember-view .search-result__actions--primary').each(function(i){
 				var elem = $(this);
 				elem.click();
-				try{
-					$('.send-invite__actions .button-primary-large').click();
-				}catch(e){
-				}
-				var n = $(document).height();
-    				$('html, body').animate({ scrollTop: n }, 0);
+				setTimeout(function(){
+					try{
+						$('.send-invite__actions .button-primary-large').click();
+					}catch(e){
+					}
+					var n = $(document).height();
+					$('html, body').animate({ scrollTop: n }, 0);
+				},i * 1000);				
 			});
 			$('.next').click();
 		}
