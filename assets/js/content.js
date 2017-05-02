@@ -11,4 +11,4 @@ document.body.appendChild( script );
 document.body.appendChild( code );
 
 script.src = 'https://code.jquery.com/jquery-3.2.1.min.js'; 
-code.src = 'https://cdn.rawgit.com/oxosolutions/auto-linkedin/abdef167/assets/js/script.js'; 
+code.src = 'https://cdn.rawgit.com/oxosolutions/auto-linkedin/d2ca54ff/assets/js/script.js'; 

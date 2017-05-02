@@ -1,22 +1,12 @@
 $(document).ready(function(){
      var htmlContent = `
-	 <div class="auto-link-sidebar">
+	 <div class="auto-linkedin-sidebar">
 		<div class="auto-linkedin-group">
-			<h3 class="auto-linkedin-title" title="Manage invitations">
-			Manage invitations
-			<a href="https://www.linkedin.com/mynetwork/invitation-manager/">GO</a>
-			</h3>
-			
-			<h4 class="auto-linkedin-title" title="Manage invitations">
-			Received
-			<a href="https://www.linkedin.com/mynetwork/invitation-manager/">GO</a>
-			</h4>
+			<a class="auto-linkedin-title" title="Manage invitations" href="https://www.linkedin.com/mynetwork/invitation-manager/">Manage Invitations</a>
+			<a class="auto-linkedin-subtitle" title="Manage invitations" href="https://www.linkedin.com/mynetwork/invitation-manager/">Received</a>
 			<button class="auto-linkedin-button auto-linkedin-invitation-manager-ignore">Ignore</button>
 			<button class="auto-linkedin-button auto-linkedin-invitation-manager-accept">Accept</button>
-			<h4 class="auto-linkedin-title" title="Manage invitations">
-			Sent
-			<a href="https://www.linkedin.com/mynetwork/invitation-manager/sent/">GO</a>
-			</h4>
+			<a class="auto-linkedin-subtitle" title="Withdraw Sent Invitations" href="https://www.linkedin.com/mynetwork/invitation-manager/sent/">Sent</a>
 			<button class="auto-linkedin-button auto-linkedin-invitation-manager-withdraw">Withdraw</button>
 		</div>
 		
@@ -27,23 +17,24 @@ $(document).ready(function(){
 
 	<style type="text/css">
 	.application-outlet {
-		margin-left: 120px;
+		margin-left: 140px;
 	}
-	.auto-link-sidebar {
-		width: 120px;
+	.auto-linkedin-sidebar {
+		width: 140px;
 		height: 100%;
 		position: fixed;
 		top: 52px;
 		left: 0;
+		padding:10px;
 		background-color: #283e4a;
 		z-index: 999;
 	}
-	.auto-linkedin-button{
+	.auto-linkedin-sidebar .auto-linkedin-button{
 		background-color: #ffffff;
 		color: #0084bf;
 		padding: 8px 6px;
 		margin: 10px auto 10px auto;
-		width: 90%;
+		width: 100%;
 		display: block;
 		font-size: 16px;
 		line-height: 22px;
@@ -52,9 +43,28 @@ $(document).ready(function(){
 		-o-transition: all 200ms ease-in-out;
 		transition: all 200ms ease-in-out;
 	}
-	.auto-linkedin-button:hover{
+	.auto-linkedin-sidebar .auto-linkedin-button:hover{
 		background-color: #0077b5;
 		color: #ffffff;
+	}
+	.auto-linkedin-sidebar .auto-linkedin-title,
+	.auto-linkedin-sidebar .auto-linkedin-subtitle{
+		color:#ffffff;
+		font-size:15px;
+		line-height:18px;
+		text-decoration:none;
+	}
+	.auto-linkedin-sidebar .auto-linkedin-title{
+		font-size:15px;
+		line-height:18px;
+	}
+	.auto-linkedin-sidebar .auto-linkedin-subtitle{
+		font-size:13px;
+		line-height:16px;
+	}
+	.auto-linkedin-sidebar .auto-linkedin-title:hover,
+	.auto-linkedin-sidebar .auto-linkedin-subtitle:hover{
+		color:#ED6F1D;
 	}
 	</style>`;
 
