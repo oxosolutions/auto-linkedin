@@ -52,7 +52,7 @@ $(document).ready(function(){
      });
      $('.auto-linkedin-connect-searched').click(function(){
 	  
-	var buttonsLength = $('.ember-view .search-result__actions--primary').length;
+	var buttonsLength = $('.search-result').length;
 	var index = 1;
 	function clickEvent(){
 		console.log(index);
