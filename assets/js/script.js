@@ -67,7 +67,7 @@ $(document).ready(function(){
 			   index = 1;
 		           clickEvent();
 			}
-		},1000);
+		},3000);
 	}
 	clickEvent();
      });
