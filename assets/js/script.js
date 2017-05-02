@@ -56,6 +56,7 @@ $(document).ready(function(){
 		if(allElements == 0){
 			clearInterval(connectSearchedInterval);
 		}else{
+			console.log($('.ember-view .search-result__actions--primary').length);
 			$('.ember-view .search-result__actions--primary').each(function(i){
 				var elem = $(this);
 				elem.click();
