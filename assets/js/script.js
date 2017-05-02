@@ -56,7 +56,7 @@ $(document).ready(function(){
 	var index = 1;
 	function clickEvent(){
 		console.log(index);
-		$('.ember-view .search-result__actions--primary:nth-child('+index+')').click();
+		$('.search-result__actions--primary:nth-child('+index+')').click();
 		setTimeout(function(){
 			if(index <= buttonsLength){
 				index++;
