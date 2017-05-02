@@ -1,5 +1,5 @@
 $(document).ready(function(){
-     var htmlContet = `<div class="sidebar">
+     var htmlContent = `<div class="sidebar">
 	<button class="withdraw">Withdraw</button>
 	<button class="connect">Connect</button>
 </div>
