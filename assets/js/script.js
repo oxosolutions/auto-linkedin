@@ -81,7 +81,7 @@ $(document).ready(function(){
 	     $('.msg-conversation-listitem').each(function(){
 		     $(this).find('a').click();
 		     $(this).click();
-		     conosle.log('Each');
+		     console.log('Each');
 // 		     $('.msg-compose-form__message-text').val('Hello');
 // 		     var press = jQuery.Event("keypress");
 // 		     press.ctrlKey = false;
