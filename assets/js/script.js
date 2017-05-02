@@ -52,11 +52,11 @@ $(document).ready(function(){
      });
      $('.auto-linkedin-connect-searched').click(function(){
 	  
-	var buttonsLength = $('.search-result').length;
+	var buttonsLength = $('.search-result__occluded-item').length;
 	var index = 1;
 	function clickEvent(){
 		console.log(index);
-		$('.search-result:nth-child('+index+')').find('.search-result__actions--primary').click();
+		$('.search-result__occluded-item:nth-child('+index+')').find('.search-result__actions--primary').click();
 		setTimeout(function(){
 			if(index <= buttonsLength){
 				index++;
