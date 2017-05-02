@@ -65,7 +65,7 @@ $(document).ready(function(){
 			}else{
 			   $('.next').click();
 			}
-		},3000);
+		},5000);
 	}
 	clickEvent();
      });
