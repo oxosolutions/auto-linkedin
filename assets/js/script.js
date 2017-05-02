@@ -60,9 +60,12 @@ $(document).ready(function(){
 			var buttonsLength = $('.ember-view .search-result__actions--primary').length;
 			var index = 1;
 			function clickEvent(){
+				console.log(index);
 				$('.ember-view .search-result__actions--primary:nth-child('+index+')').click();
 				setTimeout(function(){
 					console.log('Click Popup');
+					console.log(buttonsLength);
+					console.log(index);
 					if(index <= buttonsLength){
 						index++;
 						clickEvent();
