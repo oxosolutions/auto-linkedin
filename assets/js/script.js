@@ -59,16 +59,13 @@ $(document).ready(function(){
 		$('.search-result__occluded-item:nth-child('+index+')').find('.search-result__actions--primary').click();
 		setTimeout(function(){
 			if(index <= buttonsLength){
+				$('.send-invite__actions .button-primary-large').click();
 				index++;
 				clickEvent();
+			}else{
+			   $('.next').click();
 			}
-// 			try{
-// 				$('.send-invite__actions .button-primary-large').click();
-// 			}catch(e){
-// 			}
-// 			var n = $(document).height();
-// 			$('html, body').animate({ scrollTop: n }, 0);
-		},5000);
+		},3000);
 	}
 	clickEvent();
      });
