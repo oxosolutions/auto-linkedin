@@ -57,8 +57,8 @@ $(document).ready(function(){
 	function clickEvent(){
 		console.log(index);
 		$('.search-result__occluded-item:nth-child('+index+')').find('.search-result__actions--primary').click();
-		$('.send-invite__actions .button-primary-large').click();
 		setTimeout(function(){
+			$('.send-invite__actions .button-primary-large').click();
 			if(index <= buttonsLength){
 				index++;
 				clickEvent();
