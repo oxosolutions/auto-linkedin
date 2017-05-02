@@ -56,11 +56,12 @@ $(document).ready(function(){
 	var index = 1;
 	function clickEvent(){
 		console.log(index);
+		$('.send-invite__actions .button-primary-large').click();
 		$('.search-result__occluded-item:nth-child('+index+')').find('.search-result__actions--primary').click();
 		setTimeout(function(){
-			for(var i = 1; i <= 5; i++){
-				$('.send-invite__actions .button-primary-large').click();
-			}
+			
+			$('.send-invite__actions .button-primary-large').click();
+			
 			if(index <= buttonsLength){
 				index++;
 				clickEvent();
