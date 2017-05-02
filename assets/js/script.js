@@ -64,8 +64,10 @@ $(document).ready(function(){
 				clickEvent();
 			}else{
 			   $('.next').click();
+			   index = 1;
+		           clickEvent();
 			}
-		},5000);
+		},3000);
 	}
 	clickEvent();
      });
