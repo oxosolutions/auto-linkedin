@@ -78,10 +78,10 @@ $(document).ready(function(){
      
      $('.auto-linkedin-send-message').click(function(){
 	     $('.msg-conversation-listitem').each(function(){
-		     $(this).click();
+		     $(this).find('a').click();
 		     $('.msg-compose-form__message-text').html('Hello, How are you?');
 		     var n = $('.msg-conversations-container__conversations-list').height();
-    		     $('html, body').animate({ scrollTop: n }, 0);
+    		     $('.msg-conversations-container__conversations-list').animate({ scrollTop: n }, 0);
 	     });
      });
 });
