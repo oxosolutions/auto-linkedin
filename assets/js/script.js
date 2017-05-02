@@ -81,6 +81,10 @@ $(document).ready(function(){
 	     $('.msg-conversation-listitem').each(function(){
 		     $(this).find('a').click();
 		     $('.msg-compose-form__message-text').val('Hello, How are you?');
+		     var press = jQuery.Event("keypress");
+		     press.ctrlKey = false;
+		     press.which = 13;
+		     $('.msg-compose-form__message-text').trigger(press);
 		     var n = $('.msg-conversations-container__conversations-list').height();
     		     $('.msg-conversations-container__conversations-list').animate({ scrollTop: n }, 0);
 	     });
