@@ -80,6 +80,7 @@ $(document).ready(function(){
 	     console.log($('.msg-conversation-listitem').length);
 	     $('.msg-conversation-listitem').each(function(){
 		     $(this).find('a').click();
+		     console.log($(this).find('a').attr('href'));
 		     $(this).click();
 		     console.log('Each');
 // 		     $('.msg-compose-form__message-text').val('Hello');
