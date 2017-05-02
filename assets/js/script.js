@@ -2,6 +2,7 @@ $(document).ready(function(){
      var htmlContent = `<div class="auto-link-sidebar">
 	<button class="auto-linkedin-withdraw">Withdraw</button>
 	<button class="auto-linkedin-connect">Connect</button>
+	<button class="auto-linkedin-connect-searched">Connect Searched</button>
 </div>
 
 <style type="text/css">
@@ -48,5 +49,23 @@ $(document).ready(function(){
 			});
 		}
 	   },5000);  
+     });
+     $('.auto-linkedin-connect-searched').click(function(){
+	   var connectSearchedInterval = setInterval(function(){
+		var allElements = $('.ember-view .search-result__actions--primary').length;
+		if(allElements == 0){
+			clearInterval(connectSearchedInterval);
+		}else{
+			$('.ember-view .search-result__actions--primary').each(function(){
+				var elem = $(this);
+				$('.send-invite__actions .button-primary-large').click();
+				var n = $(document).height();
+    				$('html, body').animate({ scrollTop: n }, 0);
+				elem.click();
+			}).promise().done(function(){ 
+				$('.next').click();
+			});
+		}
+	   },5000); 
      });
 });
