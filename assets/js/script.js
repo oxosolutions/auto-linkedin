@@ -75,22 +75,6 @@ $(document).ready(function(){
 				},5000);
 				index++;
 			}
-			$('.ember-view .search-result__actions--primary').each(function(i){
-				var elem = $(this);
-				elem.click();
-				setTimeout(function(){
-					console.log('Click Popup');
-// 					try{
-// 						$('.send-invite__actions .button-primary-large').click();
-// 					}catch(e){
-// 					}
-// 					var n = $(document).height();
-// 					$('html, body').animate({ scrollTop: n }, 0);
-				},5000);				
-			});
-// 			.promise().done(function () {
-// 				$('.next').click();
-// 			})
 		}
 	   },5000); 
      });
