@@ -65,7 +65,7 @@ $(document).ready(function(){
 				}
 				var n = $(document).height();
     				$('html, body').animate({ scrollTop: n }, 0);
-			})
+			});
 			$('.next').click();
 		}
 	   },5000); 
