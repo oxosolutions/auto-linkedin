@@ -57,8 +57,7 @@ $(document).ready(function(){
 		color: #ffffff;
 	}
 	</style>`;
-	mn-invitation-list
-	
+
 	$('body').append(htmlContent);
 	
 	//Ignore
