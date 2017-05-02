@@ -61,12 +61,13 @@ $(document).ready(function(){
 				var elem = $(this);
 				elem.click();
 				setTimeout(function(){
-					try{
-						$('.send-invite__actions .button-primary-large').click();
-					}catch(e){
-					}
-					var n = $(document).height();
-					$('html, body').animate({ scrollTop: n }, 0);
+					console.log('Click Popup');
+// 					try{
+// 						$('.send-invite__actions .button-primary-large').click();
+// 					}catch(e){
+// 					}
+// 					var n = $(document).height();
+// 					$('html, body').animate({ scrollTop: n }, 0);
 				},i * 5000);				
 			});
 // 			.promise().done(function () {
