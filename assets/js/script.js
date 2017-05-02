@@ -51,32 +51,26 @@ $(document).ready(function(){
 	   },5000);  
      });
      $('.auto-linkedin-connect-searched').click(function(){
-	   var connectSearchedInterval = setInterval(function(){
-		var allElements = $('.ember-view .search-result__actions--primary').length;
-		if(allElements == 0){
-			clearInterval(connectSearchedInterval);
-		}else{
-			var buttonsLength = $('.ember-view .search-result__actions--primary').length;
-			var index = 1;
-			function clickEvent(){
-				$('.ember-view .search-result__actions--primary:nth-child('+index+')').click();
-				setTimeout(function(){
-					console.log('Click Popup');
-					if(index <= buttonsLength){
-						console.log('Function again');
-						index++;
-						clickEvent();
-					}
-// 					try{
-// 						$('.send-invite__actions .button-primary-large').click();
-// 					}catch(e){
-// 					}
-// 					var n = $(document).height();
-// 					$('html, body').animate({ scrollTop: n }, 0);
-				},5000);
+	  
+	var buttonsLength = $('.ember-view .search-result__actions--primary').length;
+	var index = 1;
+	function clickEvent(){
+		$('.ember-view .search-result__actions--primary:nth-child('+index+')').click();
+		setTimeout(function(){
+			console.log('Click Popup');
+			if(index <= buttonsLength){
+				console.log('Function again');
+				index++;
+				clickEvent();
 			}
-			clickEvent();
-		}
-	   },5000); 
+// 			try{
+// 				$('.send-invite__actions .button-primary-large').click();
+// 			}catch(e){
+// 			}
+// 			var n = $(document).height();
+// 			$('html, body').animate({ scrollTop: n }, 0);
+		},5000);
+	}
+	clickEvent();
      });
 });
