@@ -64,6 +64,7 @@ $(document).ready(function(){
 				setTimeout(function(){
 					console.log('Click Popup');
 					if(buttonsLength <= index){
+						index++;
 						clickEvent();
 					}
 // 					try{
@@ -73,7 +74,6 @@ $(document).ready(function(){
 // 					var n = $(document).height();
 // 					$('html, body').animate({ scrollTop: n }, 0);
 				},5000);
-				index++;
 			}
 			clickEvent();
 		}
