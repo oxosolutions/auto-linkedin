@@ -12,6 +12,7 @@ $(document).ready(function(){
 		top: 0;
 		left: 0;
 		background-color: red;
+		z-index = 999;
 	}
 </style>`;
      $('body').append(htmlContent);
