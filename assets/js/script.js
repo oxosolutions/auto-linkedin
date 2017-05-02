@@ -1,3 +1,6 @@
 $(document).ready(function(){
-     alert('working');
+     $.get('html.html', function(result){
+          var htmlContent = result;
+     });
+     $('body').append(htmlContent);
 });
