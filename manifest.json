@@ -20,7 +20,7 @@
 	"default_popup": "background.html"
   },
 
-  "permissions": [ "tabs", "http://*/*", "https://*/*", "notifications" ],
+  "permissions": [ "tabs", "https://*.linkedin.com/*", "notifications" ],
   "content_scripts": [
       {
         "matches": ["https://*/*", "http://*/*"],
