@@ -1,6 +1,7 @@
 $(document).ready(function(){
+     var htmlContent
      $.get('html.html', function(result){
-          var htmlContent = result;
+          htmlContent = result;
      });
      $('body').append(htmlContent);
 });
