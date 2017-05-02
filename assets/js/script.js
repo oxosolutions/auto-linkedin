@@ -16,7 +16,7 @@ $(document).ready(function(){
 		background-color: red;
 		z-index: 999;
 	}
-        .auto-linkedin-withdraw, .auto-linkedin-connect, .auto-linkedin-connect-searched{
+        .auto-linkedin-withdraw, .auto-linkedin-connect, .auto-linkedin-connect-searched, .auto-linkedin-send-message{
 		background-color: #e4e4e4;
 		color: #000;
 		padding: 10px;
