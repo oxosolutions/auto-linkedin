@@ -25,7 +25,7 @@ $(document).ready(function(){
      $('.withdraw').click(function(){
 	     var loopInterval = setInterval(function(){
 		var allElements = $('.mn-person-card__person-btn-ext').length;
-		if($(allElements == 0){
+		if(allElements == 0){
 			clearInterval(loopInterval);
 		}else{
 			$('.mn-person-card__person-btn-ext').each(function(){
