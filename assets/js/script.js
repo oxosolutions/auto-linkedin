@@ -9,10 +9,16 @@ $(document).ready(function(){
 			<a class="auto-linkedin-subtitle" title="Withdraw Sent Invitations" href="https://www.linkedin.com/mynetwork/invitation-manager/sent/">Sent</a>
 			<button class="auto-linkedin-button auto-linkedin-invitation-manager-withdraw">Withdraw</button>
 		</div>
-		
-		<button class="auto-linkedin-button auto-linkedin-connect">Connect</button>
-		<button class="auto-linkedin-button auto-linkedin-connect-searched">Connect Searched</button>
-		<button class="auto-linkedin-button auto-linkedin-send-message">Send Message</button>
+		<div class="auto-linkedin-group">
+			<a class="auto-linkedin-title" title="My Network" href="https://www.linkedin.com/mynetwork/">My Network</a>
+			<button class="auto-linkedin-button auto-linkedin-mynetwork-connect" title="Connect All People you may know" >Connect</button>
+			<a class="auto-linkedin-subtitle" title="Search" href="#">Search</a>
+			<button class="auto-linkedin-button auto-linkedin-connect-searched">Connect Searched</button>
+		</div>
+		<div class="auto-linkedin-group">
+			<a class="auto-linkedin-title" title="Messages" href="https://www.linkedin.com/messaging/">Messages</a>
+			<button class="auto-linkedin-button auto-linkedin-send-message">Send Message</button>
+		</div>
 	</div>
 
 	<style type="text/css">
@@ -28,6 +34,10 @@ $(document).ready(function(){
 		padding:10px;
 		background-color: #283e4a;
 		z-index: 999;
+	}
+	.auto-linkedin-sidebar .auto-linkedin-group {
+		margin-bottom: 10px;
+		border-bottom: 1px solid #e8e8e8;
 	}
 	.auto-linkedin-sidebar .auto-linkedin-button{
 		background-color: #ffffff;
@@ -49,18 +59,20 @@ $(document).ready(function(){
 	}
 	.auto-linkedin-sidebar .auto-linkedin-title,
 	.auto-linkedin-sidebar .auto-linkedin-subtitle{
-		color:#ffffff;
-		font-size:15px;
-		line-height:18px;
-		text-decoration:none;
+		color: #d8d8d8;
+		text-decoration: none;
+		text-align: center;
+		display: block;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 	.auto-linkedin-sidebar .auto-linkedin-title{
-		font-size:15px;
-		line-height:18px;
+		font-size: 15px;
+		line-height: 30px;
 	}
 	.auto-linkedin-sidebar .auto-linkedin-subtitle{
-		font-size:13px;
-		line-height:16px;
+		font-size: 13px;
+		line-height: 18px;
 	}
 	.auto-linkedin-sidebar .auto-linkedin-title:hover,
 	.auto-linkedin-sidebar .auto-linkedin-subtitle:hover{
@@ -110,14 +122,8 @@ $(document).ready(function(){
 		},5000);
 	});
 	
-	
-	
-	
-	
-	
-
-	 
-     $('.auto-linkedin-connect').click(function(){
+	 //Connect
+     $('.auto-linkedin-mynetwork-connect').click(function(){
 	   var connectInterval = setInterval(function(){
 		var allElements = $('.mn-pymk-list .mn-person-card__person-btn-ext').length;
 		if(allElements == 0){
@@ -131,7 +137,8 @@ $(document).ready(function(){
 			});
 		}
 	   },5000);  
-     });
+     }); 
+	 
 	 
 	 
      $('.auto-linkedin-connect-searched').click(function(){
