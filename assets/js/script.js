@@ -63,7 +63,7 @@ $(document).ready(function(){
 				$('.ember-view .search-result__actions--primary:nth-child('+index+')').click();
 				setTimeout(function(){
 					console.log('Click Popup');
-					if(buttonsLength <= index){
+					if(index <= buttonsLength){
 						index++;
 						clickEvent();
 					}
