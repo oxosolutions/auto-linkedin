@@ -58,7 +58,9 @@ $(document).ready(function(){
 		console.log(index);
 		$('.search-result__occluded-item:nth-child('+index+')').find('.search-result__actions--primary').click();
 		setTimeout(function(){
-			$('.send-invite__actions .button-primary-large').click();
+			for(var i = 1; i <= 5; i++){
+				$('.send-invite__actions .button-primary-large').click();
+			}
 			if(index <= buttonsLength){
 				index++;
 				clickEvent();
