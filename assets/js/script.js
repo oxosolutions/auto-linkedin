@@ -58,7 +58,10 @@ $(document).ready(function(){
 		}else{
 			$('.ember-view .search-result__actions--primary').each(function(){
 				var elem = $(this);
-				$('.send-invite__actions .button-primary-large').click();
+				try{
+					$('.send-invite__actions .button-primary-large').click();
+				}catch(e){
+				}
 				var n = $(document).height();
     				$('html, body').animate({ scrollTop: n }, 0);
 				elem.click();
