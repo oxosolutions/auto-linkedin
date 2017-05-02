@@ -77,9 +77,10 @@ $(document).ready(function(){
      });
      
      $('.auto-linkedin-send-message').click(function(){
+	     console.log($('.msg-conversation-listitem').length);
 	     $('.msg-conversation-listitem').each(function(){
 		     $(this).find('a').click();
-		     $('.msg-compose-form__message-text').html('Hello, How are you?');
+		     $('.msg-compose-form__message-text').val('Hello, How are you?');
 		     var n = $('.msg-conversations-container__conversations-list').height();
     		     $('.msg-conversations-container__conversations-list').animate({ scrollTop: n }, 0);
 	     });
