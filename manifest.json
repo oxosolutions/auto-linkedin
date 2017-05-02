@@ -20,6 +20,13 @@
 	"default_popup": "background.html"
   },
 
-  "permissions": [ "tabs", "http://*/*", "https://*/*", "notifications" ]
+  "permissions": [ "tabs", "http://*/*", "https://*/*", "notifications" ],
+  "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["assets/js/content.js"],
+        "run_at": "document_end"
+      }
+    ]
 
 }
