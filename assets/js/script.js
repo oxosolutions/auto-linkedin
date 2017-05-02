@@ -56,7 +56,7 @@ $(document).ready(function(){
 	var index = 1;
 	function clickEvent(){
 		console.log(index);
-		$('.search-result__actions--primary:nth-child('+index+')').click();
+		$('.search-result:nth-child('+index+')').find('.search-result__actions--primary').click();
 		setTimeout(function(){
 			if(index <= buttonsLength){
 				index++;
