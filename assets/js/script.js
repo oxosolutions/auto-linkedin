@@ -125,11 +125,11 @@ $(document).ready(function(){
 	 //Connect
      $('.auto-linkedin-mynetwork-connect').click(function(){
 	   var connectInterval = setInterval(function(){
-		var allElements = $('.mn-pymk-list .mn-person-card__person-btn-ext').length;
+		var allElements = $('.mn-pymk-list__cards .button-secondary-small').length;
 		if(allElements == 0){
 			clearInterval(connectInterval);
 		}else{
-			$('.mn-pymk-list .mn-person-card__person-btn-ext').each(function(){
+			$('.mn-pymk-list__cards .button-secondary-small').each(function(){
 				var elem = $(this);
 				var n = $(document).height();
     				$('html, body').animate({ scrollTop: n }, 0);
